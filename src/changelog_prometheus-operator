@@ -1,0 +1,14 @@
+# Forcing Kubelet metrics scraping on http:
+serviceMonitor_https is now FALSE | line: 636
+
+# Disabling scraping of Master Nodes Components:
+kubeControllerManager_enabled is now FALSE | line: 697
+kubeScheduler_enabled is now FALSE | line: 890
+kubeEtcd_enabled is now FALSE | line: 830
+kubeProxy_enabled is now FALSE | line: 943
+
+# Change Grafana pre-set login default password to a better memorable password:
+adminPassword is now "admin" | line: 479
+
+# Change Grafana service type to expose Grafana externally:
+service_type is now LoadBalancer | line: 565
